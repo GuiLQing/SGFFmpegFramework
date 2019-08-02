@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03C4B29D7EE31DB8287B0B94 /* SGFFmpegFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SGFFmpegFramework.podspec; path = ../SGFFmpegFramework.podspec; sourceTree = "<group>"; };
+		03C4B29D7EE31DB8287B0B94 /* SGFFmpegFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SGFFmpegFramework.podspec; path = ../SGFFmpegFramework.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		06801ADCEC3D8CE6323EC1AC /* Pods-SGFFmpegFramework_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGFFmpegFramework_Example.release.xcconfig"; path = "Target Support Files/Pods-SGFFmpegFramework_Example/Pods-SGFFmpegFramework_Example.release.xcconfig"; sourceTree = "<group>"; };
 		284872235B49CD54AB07C640 /* Pods-SGFFmpegFramework_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGFFmpegFramework_Example.debug.xcconfig"; path = "Target Support Files/Pods-SGFFmpegFramework_Example/Pods-SGFFmpegFramework_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SGFFmpegFramework_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGFFmpegFramework_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,12 +59,12 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		62A1CA53272387E7CE5D9160 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		62A1CA53272387E7CE5D9160 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		66142E05B7EB097344E4669C /* Pods-SGFFmpegFramework_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGFFmpegFramework_Tests.release.xcconfig"; path = "Target Support Files/Pods-SGFFmpegFramework_Tests/Pods-SGFFmpegFramework_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1BF8DF5685B6AF9D17BEDEB /* Pods_SGFFmpegFramework_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGFFmpegFramework_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0A9861AE3F4D52BB9A5C1CE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C0A9861AE3F4D52BB9A5C1CE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D229AFC858F8A056ACFF677D /* Pods-SGFFmpegFramework_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGFFmpegFramework_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SGFFmpegFramework_Tests/Pods-SGFFmpegFramework_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF0599BA640034AC26B859E8 /* Pods_SGFFmpegFramework_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGFFmpegFramework_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 				D229AFC858F8A056ACFF677D /* Pods-SGFFmpegFramework_Tests.debug.xcconfig */,
 				66142E05B7EB097344E4669C /* Pods-SGFFmpegFramework_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				61069E91A0033CEA935FBC37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +256,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -295,24 +294,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		61069E91A0033CEA935FBC37 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SGFFmpegFramework_Example/Pods-SGFFmpegFramework_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SGFFmpegFramework/SGFFmpegFramework.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SGFFmpegFramework.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SGFFmpegFramework_Example/Pods-SGFFmpegFramework_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6DD05B5E6234126EA772CB5C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

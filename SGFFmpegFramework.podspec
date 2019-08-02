@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SGFFmpegFramework'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of SGFFmpegFramework.'
 
 # This description is used to generate tags and improve search results.
@@ -22,21 +22,22 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/GuiLQing/SGFFmpegFramework'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'GuiLQing' => 'gui950823@126.com' }
   s.source           = { :git => 'https://github.com/GuiLQing/SGFFmpegFramework.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
+  s.frameworks = 'AudioToolbox', 'VideoToolbox', 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreVideo', 'CoreAudio', 'MediaPlayer', 'OpenGLES', 'QuartzCore'
+
+  s.libraries = 'z', 'bz2.1.0', 'iconv'
+
+  s.static_framework  =  true
+
   s.source_files = 'SGFFmpegFramework/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'SGFFmpegFramework' => ['SGFFmpegFramework/Assets/*.png']
-  # }
+  s.source_files = 'SGFFmpegFramework/Classes/SGFFmpegFramework.framework/Headers/*.{h}'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.vendored_frameworks = 'SGFFmpegFramework/Classes/SGFFmpegFramework.framework'
+
 end
